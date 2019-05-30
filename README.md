@@ -55,3 +55,8 @@ cd ../backend
 python manage.py runserver
 ```
 3. Open http://127.0.0.1:8000/
+
+## Related sources and repos:
+- A post and https://blog.gundammc.com/vue-js-django/ and the repo https://github.com/gundamMC/vue-django-multipage-example
+- https://github.com/gtalarico/django-vue-template
+- https://medium.com/@michealjroberts/part-1-integrating-django-2-vue-js-and-hot-webpack-reload-setup-387a975166d3
