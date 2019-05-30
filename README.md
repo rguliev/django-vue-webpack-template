@@ -1,4 +1,4 @@
-# Django + Vue + Webpack + .env
+#  :snake:Django + :heavy_check_mark:Vue + :large_blue_diamond:Webpack + :gear:.env
 
 ## Story
 I was searching for an example/template for combining django+vue+webpack. Althought there are many repos and posts on it, none of them covered different environments settings, multiplie pages, switching hotreload. Most of them used old vue-cli config. So I combined all that exmaples and added support for multiplie pages and .env settings.
