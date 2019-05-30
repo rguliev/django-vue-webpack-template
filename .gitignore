@@ -1,0 +1,35 @@
+# Virtual env folders
+bin/
+include/
+lib/
+
+# Python files
+*.pyc
+__pycache__/
+
+# Django files
+*.sqlite3
+
+# Secret
+.env
+.env.secret
+
+# Frontend files
+.DS_Store
+node_modules
+/dist
+webpack-stats.json
+
+# Log files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Editor directories and files
+.idea
+.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
