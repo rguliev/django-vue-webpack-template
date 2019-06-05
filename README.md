@@ -60,3 +60,5 @@ python manage.py runserver
 - A post and https://blog.gundammc.com/vue-js-django/ and the repo https://github.com/gundamMC/vue-django-multipage-example
 - https://github.com/gtalarico/django-vue-template
 - https://medium.com/@michealjroberts/part-1-integrating-django-2-vue-js-and-hot-webpack-reload-setup-387a975166d3
+- https://github.com/phpdude/docker-django-webpack-skeleton
+
