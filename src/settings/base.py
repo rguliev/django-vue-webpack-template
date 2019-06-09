@@ -12,15 +12,13 @@ def reduce_path(file_name, times):
         result = os.path.dirname(result)
     return result
 
-# Root dir of the project
-ROOT_DIR = reduce_path(__file__, times=4)
 # Backend dir
 BASE_DIR = reduce_path(__file__, times=3)
-TEMPLATES_DIR = os.path.join(ROOT_DIR, 'templates')
-FRONTEND_DIR = os.path.join(ROOT_DIR, 'frontend')
+TEMPLATES_DIR = os.path.join(BASE_DIR, 'templates')
+FRONTEND_DIR = os.path.join(BASE_DIR, 'frontend')
 
 # load settings from .env file
-dotenv_path = os.path.join(ROOT_DIR, '.env')
+dotenv_path = os.path.join(BASE_DIR, '.env')
 load_dotenv(dotenv_path)
 
 DEBUG = bool(int(os.getenv('DEBUG', False)))
@@ -41,7 +39,7 @@ INSTALLED_APPS = [
     'rest_framework',
     'webpack_loader',
     #LOCAL_APPS
-    'firstapp',
+    'apps.firstapp',
 ]
 
 MIDDLEWARE = [
@@ -93,7 +91,7 @@ USE_TZ = True
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'collected_static')
 STATICFILES_DIRS = [
-    os.path.join(ROOT_DIR, 'public'),
+    os.path.join(BASE_DIR, 'public'),
 ]
 
 # Media files
