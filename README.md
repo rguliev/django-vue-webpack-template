@@ -21,13 +21,12 @@ cd django-vue-webpack-template
 cp .env.example .env 
 
 # Install all backend dependencies
-cd backend
 pipenv install
 python manage.py makemigrations
 python manage.py migrate
 
 # Install all frontend dependencies
-cd ../frontend
+cd frontend
 npm install
 ```
 
@@ -38,7 +37,7 @@ DJANGO_ENV=development
 NODE_ENV=development
 ```
 2. run in terminal: `cd frontend && npm run serve`
-3. run **in another** terminal: `cd backend && python manage.py runserver`
+3. run **in another** terminal: `python manage.py runserver`
 4. Open http://127.0.0.1:8000/
 
 ## Run dev without hot-reload
@@ -51,7 +50,7 @@ NODE_ENV=production
 ```bash
 cd frontend
 npm run build
-cd ../backend
+cd ../
 python manage.py runserver
 ```
 3. Open http://127.0.0.1:8000/
